@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/very-simple-chat-app-with-firebase/static/css/main.795cec5f.css",
+    "main.js": "/very-simple-chat-app-with-firebase/static/js/main.2fb725ca.js",
+    "index.html": "/very-simple-chat-app-with-firebase/index.html",
+    "main.795cec5f.css.map": "/very-simple-chat-app-with-firebase/static/css/main.795cec5f.css.map",
+    "main.2fb725ca.js.map": "/very-simple-chat-app-with-firebase/static/js/main.2fb725ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.795cec5f.css",
+    "static/js/main.2fb725ca.js"
+  ]
+}
