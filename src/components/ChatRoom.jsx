@@ -8,7 +8,6 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-import firebase from "firebase/compat/app";
 import { serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
 import { auth } from "../firebase";
@@ -104,7 +103,6 @@ const ChatRoom = ({ setIsSignedIn }) => {
           {messeges.map((item, index) => {
             return (
               <div
-                ref={index === messeges.length - 1 ? lastMessege : null}
                 key={item.id}
                 id={item.id}
                 sendby={item.senderData.senderId}
