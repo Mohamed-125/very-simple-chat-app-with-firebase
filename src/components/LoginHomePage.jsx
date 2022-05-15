@@ -1,5 +1,7 @@
 import React from "react";
 const LoginHomePage = ({ signInWithGoogle }) => {
+  console.log("fsdfsdsfsdfsdfsfsff");
+
   return (
     <div>
       <button

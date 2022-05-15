@@ -1,11 +1,10 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import LoginHomePage from "./components/LoginHomePage";
 import { auth } from "./firebase";
 import { googleProvider } from "./firebase";
 import { signInWithPopup } from "firebase/auth";
-import { Routes, Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ChatRoom from "./components/ChatRoom";
 const App = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -25,7 +24,7 @@ const App = () => {
   }, [isSignedIn]);
 
   return (
-    <HashRouter>
+    <Router>
       <Routes>
         <Route
           path="/"
@@ -37,11 +36,11 @@ const App = () => {
           }
         />
         <Route
-          path={"/chatRoom"}
+          path="/chatRoom"
           element={<ChatRoom setIsSignedIn={setIsSignedIn} />}
         />
       </Routes>
-    </HashRouter>
+    </Router>
   );
 };
 
