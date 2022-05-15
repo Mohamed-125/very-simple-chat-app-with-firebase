@@ -19,7 +19,7 @@ const ChatRoom = ({ setIsSignedIn }) => {
   const inputRef = useRef();
 
   //states
-
+  console.log("fdfsd");
   const [text, setText] = useState(null);
   const [sender, setSender] = useState(null);
   const [senderImg, setSenderImg] = useState(null);

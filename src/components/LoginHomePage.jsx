@@ -1,6 +1,12 @@
-import React from "react";
-const LoginHomePage = ({ signInWithGoogle }) => {
-  console.log("fsdfsdsfsdfsdfsfsff");
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+const LoginHomePage = ({ signInWithGoogle, isSignedIn }) => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (isSignedIn) {
+      navigate("/chatRoom");
+    }
+  }, [isSignedIn]);
 
   return (
     <div>
